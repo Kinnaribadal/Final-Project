@@ -1,0 +1,15 @@
+Column Key:
+
+Gender:
+Male = 0
+Female = 1
+
+Smoker?:
+No = 0
+Yes = 1
+
+Pulse regular or irregular:
+Regular = 0
+Irregular = 1
+
+
