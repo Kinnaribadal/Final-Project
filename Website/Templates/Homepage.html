@@ -37,44 +37,44 @@
 <div class="w3-content w3-padding-large w3-margin-top" id="Tool">
 
 <!-- User Input For Information Section -->
-  <div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" id="Query">
-    <h3 class="w3-center">Your Information</h3>
-    <hr>
-    <p>Blah Blah Blah. Information and what not. Im thinking a general background here or something</p>
+<div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" id="Query">
+  <h3 class="w3-center">Your Information</h3>
+  <hr>
+  <p>Blah Blah Blah. Information and what not. Im thinking a general background here or something</p>
 
-    <form action="Results.html" target="_blank">
-      <div class="w3-section">
-        <label>Gender</label>
-        <input class="w3-input w3-border" type="text" required name="Gender" placeholder="Gender">
-      </div>
-      <div class="w3-section">
-        <label>Age</label>
-        <input class="w3-input w3-border" type="text" required name="Age" placeholder="How Old Are You?">
-      </div>
-      <div class="w3-section">
-        <label>Caffine (MG)</label>
-        <input class="w3-input w3-border" type="text" required name="Caffine" placeholder="Coffee Drinker?">
-      </div>
-      <div class="w3-section">
-        <label>Systolic: Blood pressure mm Hg</label>
-        <input class="w3-input w3-border" type="text" required name="Systolic" placeholder="Blood Pressure?">
-      </div>
-      <div class="w3-section">
-        <label>Direct HDL-Cholesterol (mg/dL)</label>
-        <input class="w3-input w3-border" type="text" required name="Cholesterol" placeholder="Cholesterol Levels">
-      </div>
-      <div class="w3-section">
-        <label>Avg Drinks per Day</label>
-        <input class="w3-input w3-border" type="text" required name="Drinks" placeholder="Drinker?">
-      </div>
-      <div class="w3-section">
-        <label>Smoker?</label>
-        <input class="w3-input w3-border" type="text" required name="Smoker" placeholder="Smoking Habits">
-      </div>
-      <button type="submit" value="Save" id="Save" class="w3-button w3-block w3-dark-grey">Submit</button>
-    </form><br>
-    
-  </div>
+  <form action="Results.html">
+    <div class="w3-section">
+      <label>Gender</label>
+      <input class="w3-input w3-border" type="number" required name="Gender" placeholder="Gender" id="gender">
+    </div>
+    <div class="w3-section">
+      <label>Age</label>
+      <input class="w3-input w3-border" type="number" required name="Age" placeholder="How Old Are You?" id="age">
+    </div>
+    <div class="w3-section">
+      <label>Caffine (MG)</label>
+      <input class="w3-input w3-border" type="number" required name="Caffine" placeholder="Coffee Drinker?" id="caffine">
+    </div>
+    <div class="w3-section">
+      <label>Systolic: Blood pressure mm Hg</label>
+      <input class="w3-input w3-border" type="number" required name="Systolic" placeholder="Blood Pressure?" id="blood">
+    </div>
+    <div class="w3-section">
+      <label>Direct HDL-Cholesterol (mg/dL)</label>
+      <input class="w3-input w3-border" type="number" required name="Cholesterol" placeholder="Cholesterol Levels" id="chol">
+    </div>
+    <div class="w3-section">
+      <label>Avg Drinks per Day</label>
+      <input class="w3-input w3-border" type="number" required name="Drinks" placeholder="Drinker?" id="drink">
+    </div>
+    <div class="w3-section">
+      <label>Smoker?</label>
+      <input class="w3-input w3-border" type="number" required name="Smoker" placeholder="Smoking Habits" id="smoke">
+    </div>
+    <button onclick="store()" type="submit" value="Save" id="Save" class="w3-button w3-block w3-dark-grey">Submit</button>
+  </form><br>
+</div>
+
 
   <!--More Info Holder-->
   <div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" id="Information">
