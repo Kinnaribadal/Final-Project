@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="static/css/styles.css">
-<body>
+<body onload="loaded()">
 
 <!-- Header -->
 <header class="w3-display-container w3-content w3-center" style="max-width:1500px">
@@ -35,10 +35,16 @@
 
   <!--More Info Holder-->
   <div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" id="Information">
-    <h3 class="w3-center">Place Holder For Style</h3>
+    <h3 class="w3-center">Your Results</h3>
     <hr>
-    <p>More STyle Stuff</p>
-    <p>Powered by <a href="https://cdn.theatlantic.com/thumbor/LfyfTHNgco_iQq3tYU9YiG3tmF4=/359x322:3254x1950/720x405/https://cdn.theatlantic.com/assets/media/img/mt/2019/05/RTX1D61Q/original.jpg" target="_blank" class="w3-hover-text-green">THE GRADUATES!</a></p>
+    <p>Entered gender: <span id="genderInput"></span></p><br>
+    <p>Entered age: <span id="ageInput"></span></p><br>
+    <p>Entered caffine: <span id="caffineInput"></span></p><br>
+    <p>Entered systolic: <span id="systolicInput"></span></p><br>
+    <p>Entered cholesterol: <span id="cholesterolInput"></span></p><br>
+    <p>Entered drinks: <span id="drinksInput"></span></p><br>
+    <p>Entered smoker: <span id="smokerInput"></span></p><br>
+    
   </div>
 
 <!-- End page content -->
