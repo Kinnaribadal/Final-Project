@@ -21,7 +21,7 @@ def process_page():
 
 #Provide a route to the html process page
 @app.route("/Results.html")
-def process_page():
+def results_page():
     #GoTo webpage
     return render_template("Results.html")
 
