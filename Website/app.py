@@ -14,7 +14,7 @@ def home():
     return render_template("Homepage.html")
 
 #Provide a route to the html process page
-@app.route("/processModel.html")
+@app.route("/Model.html")
 def process_page():
     #GoTo webpage
     return render_template("Model.html")
