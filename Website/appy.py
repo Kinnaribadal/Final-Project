@@ -13,5 +13,11 @@ def home():
     #GoTo webpage
     return render_template("Homepage.html")
 
+#Provide a route to the html process page
+@app.route("/processModel.html")
+def process_page():
+    #GoTo webpage
+    return render_template("Model.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
