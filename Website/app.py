@@ -19,5 +19,30 @@ def process_page():
     #GoTo webpage
     return render_template("Model.html")
 
+#Provide a route that will outsorce our mongodb data as an API to our webpages
+#NOT CREATED YET
+# @app.route("/our-data-api")
+# def scrape():
+#     #Set variable to hold what is returned from calling the function
+#     data = get_data()
+#     #Jsonify the query 
+#     return jsonify(get_data)
+
+# #function that queries database and returns the data
+# def get_data_from_db():
+#     client = MongoClient('mongodb://localhost:27017/')
+    
+#     #Variables for Mongo database and collection
+#     db = database.data
+#     collection = db.pulse
+
+#     #Query database and put in a list
+#     results_dict = list(collection.find({}, {'_id':False}))
+#     client.close()
+
+#     #Dictionary is returned from calling function
+#     return results_dict
+
+
 if __name__ == "__main__":
     app.run(debug=True)
