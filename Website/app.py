@@ -19,6 +19,12 @@ def process_page():
     #GoTo webpage
     return render_template("Model.html")
 
+#Provide a route to the html process page
+@app.route("/Results.html")
+def process_page():
+    #GoTo webpage
+    return render_template("Results.html")
+
 #Provide a route that will outsorce our mongodb data as an API to our webpages
 #NOT CREATED YET
 # @app.route("/our-data-api")
