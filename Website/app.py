@@ -1,9 +1,10 @@
 #Import all required extensions for app to run
 import json
 from flask_pymongo import PyMongo
-from flask import Flask, jsonify, render_template, redirect
+from flask import Flask, jsonify, render_template, request, redirect
 from bson.json_util import dumps
 from pymongo import MongoClient
+from joblib import load
 
 app = Flask(__name__)
 
@@ -27,13 +28,13 @@ def results_page():
 
 #Provide a route that will outsorce our mongodb data as an API to our webpages
 #NOT CREATED YET
-# @app.route("/our-data-api")
-# def scrape():
-#     #Set variable to hold what is returned from calling the function
-#     data = get_data()
-#     #Jsonify the query 
-#     return jsonify(get_data)
-
+@app.route("/our-data-api")
+def scrape():
+    #Set variable to hold what is returned from calling the function
+    pipeline = load("Resources/random_forest.joblib")
+    #Jsonify the query 
+    return pipeline
+    
 # #function that queries database and returns the data
 # def get_data_from_db():
 #     client = MongoClient('mongodb://localhost:27017/')
