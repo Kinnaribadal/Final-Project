@@ -35,7 +35,11 @@ console.log(cholesterol);
 console.log(drinks);
 console.log(smoker);
 
-d3.json("/our-data-api", function (mydata) { 
-    data = mydata
-    console.log(data); 
-});
+params = [gender, age, height, weight, caffeine, systolic, cholesterol, drinks, smoker]
+
+console.log(params)
+
+// d3.json("/our-data-api", function (mydata) { 
+//     data = mydata
+//     console.log(data); 
+// });

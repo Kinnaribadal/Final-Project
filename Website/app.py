@@ -5,6 +5,7 @@ from flask import Flask, jsonify, render_template, request, redirect
 from bson.json_util import dumps
 from pymongo import MongoClient
 from joblib import load
+import numpy as np
 
 app = Flask(__name__)
 
@@ -21,19 +22,25 @@ def process_page():
     return render_template("Model.html")
 
 #Provide a route to the html process page
-@app.route("/Results.html")
+@app.route("/Results.html", methods=['POST', 'GET'])
 def results_page():
     #GoTo webpage
+    int_features = [int(x) for x in request.form.values()]
+    final_features = [np.array(int_features)]
+    prediction = model.predict(final_features)
+
+    output = round(prediction[0], 2)
+            
     return render_template("Results.html")
 
-#Provide a route that will outsorce our mongodb data as an API to our webpages
-#NOT CREATED YET
-@app.route("/our-data-api")
-def scrape():
-    #Set variable to hold what is returned from calling the function
-    pipeline = load("Resources/random_forest.joblib")
-    #Jsonify the query 
-    return pipeline
+# #Provide a route that will outsorce our mongodb data as an API to our webpages
+# #NOT CREATED YET
+# @app.route("/our-data-api")
+# def scrape():
+#     #Set variable to hold what is returned from calling the function
+#     loaded_model = load("Resources/finalized_model.sav")
+#     #Jsonify the query 
+#     return loaded_model
     
 # #function that queries database and returns the data
 # def get_data_from_db():
