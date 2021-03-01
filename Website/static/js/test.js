@@ -39,6 +39,29 @@ params = [gender, age, height, weight, caffeine, systolic, cholesterol, drinks, 
 
 console.log(params)
 
+// function pass_values() {
+//                  $.ajax(
+//                  {
+//                      type:'POST',
+//                      contentType:'application/json;charset-utf-08',
+//                      dataType:'json',
+//                      url:'http://127.0.0.1:5000/Results.html?Gender=' + gender + '&Age=' + age + '&Height=' + height + '&Weight=' + weight + '&Caffeine+%28MG%29=' + caffeine + '&Systolic=' + systolic + '&Cholesterol=' + cholesterol + '&Drinks=' + drinks + '&Smoker=' + smoker,
+//                      success:function (data) {
+//                          var reply=data.reply;
+//                          if (reply=="success")
+//                          {
+//                              return url;
+//                          }
+//                          else
+//                              {
+//                              alert("some error ocured in session agent")
+//                              }
+ 
+//                      }
+//                  }
+//              );
+//  }
+
 // d3.json("/our-data-api", function (mydata) { 
 //     data = mydata
 //     console.log(data); 

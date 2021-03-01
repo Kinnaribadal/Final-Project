@@ -9,6 +9,8 @@ import numpy as np
 
 app = Flask(__name__)
 
+loaded_model = load("Resources/finalized_model.sav")
+
 #Provide a route to the page that is presented when app is initially run 
 @app.route("/")
 def home():
@@ -25,13 +27,13 @@ def process_page():
 @app.route("/Results.html", methods=['POST', 'GET'])
 def results_page():
     #GoTo webpage
-    int_features = [int(x) for x in request.form.values()]
-    final_features = [np.array(int_features)]
-    prediction = model.predict(final_features)
+    int_features = request.args.get('Age')
+    # final_features = [np.array(int_features)]
+    # prediction = loaded_model.predict(final_features)
 
-    output = round(prediction[0], 2)
+    # output = round(prediction[0], 2)
             
-    return render_template("Results.html")
+    return render_template("Results.html", prediction_text=int_features)
 
 # #Provide a route that will outsorce our mongodb data as an API to our webpages
 # #NOT CREATED YET
