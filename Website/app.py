@@ -9,7 +9,7 @@ import numpy as np
 
 app = Flask(__name__)
 
-loaded_model = load("Resources/finalized_model.sav")
+loaded_model = load("random_forest.joblib")
 
 #Provide a route to the page that is presented when app is initially run 
 @app.route("/")
@@ -27,13 +27,21 @@ def process_page():
 @app.route("/Results.html", methods=['POST', 'GET'])
 def results_page():
     #GoTo webpage
-    int_features = request.args.get('Age')
-    # final_features = [np.array(int_features)]
-    # prediction = loaded_model.predict(final_features)
-
-    # output = round(prediction[0], 2)
+    gender = int(request.args.get('Gender'))
+    age = int(request.args.get('Age'))
+    height = int(request.args.get('Height'))
+    weight = int(request.args.get('Weight'))
+    caffeine = int(request.args.get('Caffeine (MG)'))
+    systolic = int(request.args.get('Systolic'))
+    cholesterol = int(request.args.get('Cholesterol'))
+    drinks = int(request.args.get('Drinks'))
+    smokes = int(request.args.get('Smoker'))
+    
+    features = [gender, age, caffeine, 0, weight, height, systolic, cholesterol, drinks, smokes]
+    final_features = [np.array(features)]
+    prediction = loaded_model.predict(final_features)
             
-    return render_template("Results.html", prediction_text=int_features)
+    return render_template("Results.html", prediction_text=prediction)
 
 # #Provide a route that will outsorce our mongodb data as an API to our webpages
 # #NOT CREATED YET
