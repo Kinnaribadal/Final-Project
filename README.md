@@ -30,17 +30,18 @@ https://www.kaggle.com/cdc/national-health-and-nutrition-examination-survey?sele
 ### Building Model
 * SciKit Learn (Machine Learning Model)
   * Model used: RandomForestClassifier
-  * Exported model as a joblib file. 
+  * Exported model as a joblib file in order to reference while using flask.  
 
 ### Loading Data
 * MongoDB
-  *
+  * Load dataset from cleaned CSV data with correct formatting.
 
 ### Website Application and build
 * Flask
 * HTML
 * CSS (Bootstrap)
 * Javascript
+* Website allows for user inputs to be submitted. Model will run and report whether the user is likely to have or not have an irregular heartbeat based on model. 
 
 ### Visualizations:
 * Matplotlib (Model Visualization within Jupyter Notebook)
