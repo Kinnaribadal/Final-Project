@@ -60,6 +60,7 @@ https://www.kaggle.com/cdc/national-health-and-nutrition-examination-survey?sele
 * Matplotlib (Model Visualization within Jupyter Notebook)
 * Seaborn (Statistical Analysis- Correlation Matrix)
 * Tableau(Data Visulization and Correlation matrix)
+* D3
 
 ----------------
 # Visuals
