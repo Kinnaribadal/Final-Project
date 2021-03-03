@@ -1,4 +1,5 @@
 # Finger on the Pulse
+![alt text](https://github.com/Kinnaribadal/Final-Project/blob/main/Images/pulse.jpg)
 ----------------
 Members:
 Rafael Rodriguez,
@@ -17,7 +18,7 @@ We will be utilizing National Health and Nutrition Examination Survey data from 
 
 https://www.kaggle.com/cdc/national-health-and-nutrition-examination-survey?select=demographic.csv
 
-### Variables Selected:
+### Variables Selected
 * Gender
 * Age
 * Caffine(mg)
