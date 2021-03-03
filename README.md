@@ -65,6 +65,6 @@ https://www.kaggle.com/cdc/national-health-and-nutrition-examination-survey?sele
 # Visuals
 ![alt text](https://github.com/Kinnaribadal/Final-Project/blob/main/Images/Correlation-Matrix-sns.png)
 ![alt text](https://github.com/Kinnaribadal/Final-Project/blob/main/Images/Correlational%20Matrix-Tableau.png)
-![alt text](https://github.com/Kinnaribadal/Final-Project/blob/main/Images/Age vs pulse.png)
-![alt text](https://github.com/Kinnaribadal/Final-Project/blob/main/Images/Gender vs height and weight.png)
-![alt text](https://github.com/Kinnaribadal/Final-Project/blob/main/Images/linear regression.png)
+![alt text](https://github.com/Kinnaribadal/Final-Project/blob/main/Images/Age%20vs%20pulse.png)
+![alt text](https://github.com/Kinnaribadal/Final-Project/blob/main/Images/Gender%20vs%20height%20and%20weight.png)
+![alt text](https://github.com/Kinnaribadal/Final-Project/blob/main/Images/linear%20regression.png)
