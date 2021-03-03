@@ -20,13 +20,25 @@ https://www.kaggle.com/cdc/national-health-and-nutrition-examination-survey?sele
 ### Model transformation and model build:
 * Python (Jupyter Notebook)
   * Pandas (Data Cleaning/Wrangling)
+    * Uploaded data via CSV files.
+    * Selected necessary columns.
+    * Updated/cleaned certain fields to properly use with a machine learning model. 
   * Matplotlib (Model Visualization within Jupyter Notebook)
+  * Seaborn (Statistical Analysis- Correlation Matrix)
   * SciKit Learn (Machine Learning Model)
     * Model used: RandomForestClassifier
-  * Seaborn (Statistical Analysis- Correlation Matrix)
+    * Exported model as a joblib file. 
   * Tableau(Data Visulization and Correlation matrix)
-  * Assemble url query in string format and pull into Jupyter Notebook.
-  
+
+
+
+###Website Application and build:
+* Flask
+* HTML
+* CSS (Bootstrap)
+* Javascript
+
+
 
 
 ----------------
