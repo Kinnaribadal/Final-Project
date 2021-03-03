@@ -17,17 +17,26 @@ We will be utilizing National Health and Nutrition Examination Survey data from 
 
 https://www.kaggle.com/cdc/national-health-and-nutrition-examination-survey?select=demographic.csv
 
-### Model transformation and model build:
+# Summary of Steps Taken
+
+
+### Cleaning Data
 * Python (Jupyter Notebook)
   * Pandas (Data Cleaning/Wrangling)
     * Uploaded data via CSV files.
     * Selected necessary columns.
     * Updated/cleaned certain fields to properly use with a machine learning model. 
-  * SciKit Learn (Machine Learning Model)
-    * Model used: RandomForestClassifier
-    * Exported model as a joblib file. 
 
-### Website Application and build:
+### Building Model
+* SciKit Learn (Machine Learning Model)
+  * Model used: RandomForestClassifier
+  * Exported model as a joblib file. 
+
+### Loading Data
+* MongoDB
+  *
+
+### Website Application and build
 * Flask
 * HTML
 * CSS (Bootstrap)
