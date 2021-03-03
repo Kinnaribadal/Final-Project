@@ -9,13 +9,25 @@ Bill Roll
 
 ----------------
 # Project Proposal/Topic
-GOAL: To Create a website which will help users determine if there’s a chance that the user has an irregular heart beat.
+Create a website which will help users determine if there’s a chance that the user has an irregular heart beat. To determine this we will be building a machine learning model using several different health related inputs. Our website will allow a user to input their own information and based on the user inputs our machine learning model will try and predict whether or not the user is at risk to having an irregular heart beat.  
 
 ### Data Set
 
-We will be utilizing National Health and Nutrition Examination Survey data from the CDC during 2013 - 2014. This dataset is composed of several health metrics as well as survey data from individuals.
+We will be utilizing National Health and Nutrition Examination Survey data from the CDC during 2013 - 2014. This dataset is composed of many different health metrics as well as survey data from individuals.
 
 https://www.kaggle.com/cdc/national-health-and-nutrition-examination-survey?select=demographic.csv
+
+### Variables Selected:
+* Gender
+* Age
+* Caffine(mg)
+* Alcohol (gm)
+* Weight (kg)
+* Standing Height (cm)
+* Systolic: Blood pressure mm Hg
+* Direct HDL-Cholesterol (mg/dL)
+* Avg Drinks per Day
+* Smoker?
 
 # Summary of Steps Taken
 
