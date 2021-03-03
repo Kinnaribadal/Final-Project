@@ -22,6 +22,7 @@ https://www.kaggle.com/cdc/national-health-and-nutrition-examination-survey?sele
   * Pandas (Data Cleaning/Wrangling)
   * Matplotlib (Model Visualization within Jupyter Notebook)
   * SciKit Learn (Machine Learning Model)
+    * Model used: RandomForestClassifier
   * Seaborn (Statistical Analysis- Correlation Matrix)
   * Tableau(Data Visulization and Correlation matrix)
   * Assemble url query in string format and pull into Jupyter Notebook.
