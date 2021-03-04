@@ -6,12 +6,44 @@ from bson.json_util import dumps
 from pymongo import MongoClient
 from joblib import load
 import numpy as np
+from bson import json_util
 
 app = Flask(__name__)
 
 loaded_model = load("random_forest.joblib")
 
 #Provide a route to the page that is presented when app is initially run 
+
+# setup mongo connection
+MONGODB_HOST = 'localhost'
+MONGODB_PORT = 27017
+DBS_NAME = 'final_project'
+COLLECTION_NAME = 'person_features'
+FIELDS = {"Gender": True,"Age": True,"Caffeine (mg)": True,"Alcohol (gm)": True,"Weight (kg)": True,"Standing Height (cm)": True,"Pulse regular or irregular": True,"Systolic: Blood pressure mm Hg": True,"Direct HDL-Cholesterol (mg/dL)": True,"Avg Drinks per Day": True,"Smoker?": True, "_id": False}
+
+# connect to mongo db and collection
+connection = MongoClient(MONGODB_HOST, MONGODB_PORT)
+collection = connection[DBS_NAME][COLLECTION_NAME]
+projects = collection.find(projection=FIELDS)
+
+#Retrieve our MongoDB Data collection:
+@app.route("/json-data")
+def person_data():
+    connection = MongoClient(MONGODB_HOST, MONGODB_PORT)
+    collection = connection[DBS_NAME][COLLECTION_NAME]
+    projects = collection.find(projection=FIELDS)
+    json_projects = []
+    for project in projects:
+        json_projects.append(project)
+    json_projects = json.dumps(json_projects, default=json_util.default)
+    connection.close()
+    return json_projects
+
+# Route to render visualization by querying web api from JavaScript
+@app.route("/multiple")
+def multiple():
+    return render_template("multiple.html")
+
 @app.route("/")
 def home():
     #GoTo webpage
