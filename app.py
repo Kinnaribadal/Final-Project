@@ -33,6 +33,12 @@ def person_data():
     connection.close()
     return json_projects
 
+# Route to render visualization by querying web api from JavaScript
+@app.route("/multiple")
+def multiple():
+    return render_template("multiple.html")
+
+
 #Provide a route to the page that is presented when app is initially run 
 @app.route("/")
 def home():
