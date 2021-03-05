@@ -9,6 +9,8 @@ so i tried doing a sample of everything by using lung cancer dataset.
 
 we realized we have no medical knowledge
 
+we also realized we cannot give medical advice legally
+
 
 there is so much medical data and medical field it was tough to streaming down the goal.
 
