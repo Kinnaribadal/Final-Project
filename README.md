@@ -6,6 +6,12 @@ Rafael Rodriguez
 Zachary Kopec
 Bill Roll
 Raul Acosta
+so i tried doing a sample of everything by using lung cancer dataset
+
+
+
+
+
 Kinnari Patel
 Nehemiah Porter
 
