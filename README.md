@@ -1,14 +1,22 @@
 Finger on the Pulse
 03.04.2021
+
+Brainstorming.....
+
+we wanted to be online doctors!
+
+
+
+
+
+
 ─
 FINAL PROJECT:  Group 1 Team Members: 
 Rafael Rodriguez
 Zachary Kopec
 Bill Roll
 Raul Acosta
-so i tried doing a sample of everything by using lung cancer dataset
 
-there is so much medical data and medical field it was tough to streaming down the goal
 
 
 
