@@ -13,7 +13,9 @@ we also realized we cannot give medical advice legally
 
 there is so much medical data and medical field it was tough to streaming down the goal.
 
-it took us a whole session the figure out what one thing we will do.
+it took us a whole session to figure out what one thing we will do.
+
+it decided to master the whole process and divided everything among us
 
 
 
